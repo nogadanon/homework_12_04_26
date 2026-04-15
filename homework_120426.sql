@@ -21,3 +21,24 @@ SELECT *
 FROM STUDENTS
 
 -- 3.2 select query to show all students only name and grade
+SELECT NAME, GRADE
+FROM STUDENTS
+
+-- 3.3 select query to show all students who got grade above 90
+SELECT *
+FROM STUDENTS
+WHERE GRADE > 90
+
+-- 3.4 select all students where their name starts with M
+SELECT *
+FROM STUDENTS
+WHERE NAME LIKE 'M%'
+
+-- 3.5 show the avg grade, max, min
+SELECT 
+AVG(GRADE) AS Average_Grade,
+MAX(GRADE) AS Max_Grade, 
+MIN(GRADE) AS Min_Grade
+FROM STUDENTS;
+
+-- 3.6 show all students who got above avg
