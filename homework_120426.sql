@@ -47,6 +47,32 @@ FROM STUDENTS
 WHERE GRADE > (SELECT AVG(GRADE) FROM STUDENTS);
 
 -- 4. Change Liam grade to 90
+UPDATE STUDENTS
+SET GRADE = 90
+WHERE NAME LIKE 'Lima'
+
+-- 5. Delete all students where city starts with "N"
+DELETE FROM STUDENTS
+WHERE CITY LIKE 'N%'
+
+-- 6. Delete all students with grade 88
+DELETE FROM STUDENTS
+WHERE GRADE = 88
+
+-- 7. Finally drop the table
+DROP TABLE STUDENTS
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
