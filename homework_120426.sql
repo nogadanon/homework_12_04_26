@@ -42,3 +42,19 @@ MIN(GRADE) AS Min_Grade
 FROM STUDENTS;
 
 -- 3.6 show all students who got above avg
+SELECT *
+FROM STUDENTS
+WHERE GRADE > (SELECT AVG(GRADE) FROM STUDENTS);
+
+-- 4. Change Liam grade to 90
+
+
+
+
+
+
+
+
+
+
+
